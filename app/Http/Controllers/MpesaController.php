@@ -39,7 +39,7 @@ class MpesaController extends Controller
                 "TransactionDesc" => "test",
             ])->json();
 
-        if (\array_keys('ResponseCode', $response) && $response['ResponseCode'] == 0) {
+        if (\array_key_exists('ResponseCode', $response) && $response['ResponseCode'] == 0) {
             // success
            return \back('success', 'Request is being processed');
         }
