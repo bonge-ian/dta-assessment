@@ -8,6 +8,7 @@
                 <div>
                     <div class="uk-card uk-card-primary uk-card-body uk-light">
                         <h3 class="uk-card-title">Send an SMS to one person</h3>
+                        <p class="uk-text-meta">Phone number format: 2547XXXXXXXX</p>
                         <hr>
                         <form action="{{ route('send.one') }}" method="post">
                             @csrf
@@ -51,6 +52,7 @@
 
                     <div class="uk-card  uk-card-body uk-margin-large-top " style="background-color: #2e2147; ">
                         <h3 class="uk-card-title" >Lipa na Mpesa</h3>
+                        <p class="uk-text-meta">Phone number format: 2547XXXXXXXX</p>
                         <hr>
                         <form action="{{ route('mpesa.lipa') }}" method="post">
                             @csrf
@@ -60,7 +62,7 @@
                                     <input class="uk-input uk-form-width-large uk-disabled"
                                            type="text"
                                            name="paybill"
-                                           value="Till number: 175467"
+                                           value="Till number: 174379"
                                     >
                                 </div>
                             </div>
@@ -84,7 +86,7 @@
                                 <div class="uk-inline">
                                     <span class="uk-form-icon" uk-icon="icon: credit-card"></span>
                                     <input class="uk-input uk-form-width-large"
-                                           type="number"
+                                           type="text"
                                            name="amount"
                                            placeholder="Amount">
                                 </div>
@@ -104,6 +106,7 @@
                 <div>
                     <div class="uk-card uk-card-secondary uk-card-body ">
                         <h3 class="uk-card-title">Send an SMS To Many Numbers</h3>
+                        <p class="uk-text-meta">Phone number format: 2547XXXXXXXX</p>
                         <p class="uk-text-meta">In the input, enter a comma separated list of numbers</p>
                         <p class="uk-text-meta">Eg: 2547123456,2547123456,2547123457</p>
                         <hr>
